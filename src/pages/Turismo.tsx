@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Turismo = () => {
   // Catálogo completo de 12 destinos turísticos VIP
