@@ -1,5 +1,5 @@
-
-
+import imgColectivo from '../assets/COLECTIVO.png';
+import imgTuristico from '../assets/TURISTICO.jpg';
 const Servicios = () => {
   return (
     <div className="w-full bg-[#F8F9FA] font-sans pb-24 overflow-hidden">
@@ -35,11 +35,14 @@ const Servicios = () => {
           {/* Columna Imagen Real con Etiquetas Flotantes */}
           <div className="w-full lg:w-1/2 relative group">
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
+              
+              {/* AQUÍ INYECTAMOS LA IMAGEN LOCAL DEL COLECTIVO */}
               <img 
-                src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/472681277_907132278068110_7382195119501803368_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY1FPt0p_lhT19VWW5KpnJVPDKCL7fNENU8MoIvt80Q3JiKb8fBaKjPTvsf4ztrLR4AWmcMDw2SIcznPllmuSG&_nc_ohc=okas_xx7cdoQ7kNvwHGPsow&_nc_oc=AdqNxyxCr8QO3JqZSf5-N2lUSU3PG0ncObG-36mPu61Z6j8TRvyGvrIK450uqIJsojo&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=BBnrLpHXEfnHk8XmsfrEqQ&_nc_ss=7b2a8&oh=00_Af5bF5Yt-gAoxMN2rhaIbZNrYmsRZm4D7loTZmqhn21F2w&oe=6A11AC01" 
+                src={imgColectivo} 
                 alt="Taxi Colectivo Pasamayo Express" 
                 className="w-full h-[380px] object-cover group-hover:scale-105 transition-transform duration-700" 
               />
+              
               <div className="absolute inset-0 bg-gradient-to-t from-pasamayo-blue/70 via-transparent to-transparent"></div>
             </div>
             
@@ -87,11 +90,14 @@ const Servicios = () => {
           {/* Columna Imagen */}
           <div className="w-full lg:w-1/2 relative group">
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
+              
+              {/* AQUÍ INYECTAMOS LA IMAGEN LOCAL TURÍSTICA */}
               <img 
-                src="https://scontent-lim1-1.xx.fbcdn.net/v/t1.6435-9/67564238_722508194871523_765916591568191488_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG39NdtLvI9XBLj12GTLkmMAzDBauPJMnQDMMFq48kydPEU9eE7mJPMhcxtVn3Tw3VQaZ-X16ZlVthJG2WCg2Dg&_nc_ohc=nkS-KKxjtYEQ7kNvwGaZ3Yz&_nc_oc=AdoSNQDsxssikVCzmIyrPfDFPhx7JV5BN1CXAMjcQD7ijuLusyULU1JXsJWlDmoIQPA&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=_Ic5yM1qQugoOnSZXeJwAQ&_nc_ss=7b2a8&oh=00_Af7hrAD3rwSeD0J9KCGR2SZkgII45gqoC_HZ8l_b9iSbkg&oe=6A3335DA" 
+                src={imgTuristico} 
                 alt="Servicios Turísticos Pasamayo Express" 
                 className="w-full h-[380px] object-cover group-hover:scale-105 transition-transform duration-700" 
               />
+              
               <div className="absolute inset-0 bg-gradient-to-t from-pasamayo-blue/70 via-transparent to-transparent"></div>
             </div>
             

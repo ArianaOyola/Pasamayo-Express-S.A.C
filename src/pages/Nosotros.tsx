@@ -1,4 +1,4 @@
-
+import fotoFlota from '../assets/Nosotros.jpg';
 
 const Nosotros = () => {
   return (
@@ -46,9 +46,9 @@ const Nosotros = () => {
 
           {/* LA FOTO: Tarjeta Dedicada a la Imagen */}
           <div className="md:col-span-1 rounded-[2rem] overflow-hidden shadow-[0_10px_35px_rgba(0,0,0,0.05)] relative group min-h-[300px]">
-            {/* Aquí puedes poner la foto real de tu equipo o de tus furgonetas */}
+            {/* ESTE ES EL PASO 2: AQUÍ SE CAMBIÓ EL ENLACE LARGO POR {fotoFlota} */}
             <img 
-              src="https://scontent-lim1-1.xx.fbcdn.net/v/t1.6435-9/80373451_833382690450739_2499308793154764800_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE4unArGb7HzMCfUu_cOTwPn_esdPOy4Qqf96x087LhCkEgUFFAVrgI4VMRNmFCBuDBp1mMpVpDSfnojwOmPubj&_nc_ohc=Irekhtj9gp8Q7kNvwFrQNks&_nc_oc=Adr3-fGBU4NpQhINoiq2-hrCOatmj_mDCmp3_Df6VLvDIQFQrcUlWZI8wUrcIqbQTUI&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=KoaH6VFUPShrdi2986O8ug&_nc_ss=7b2a8&oh=00_Af4nzGL7X1SuGry2VRvjd-KPVHsspn9cm7NzqooOoFYhnQ&oe=6A33457A" 
+              src={fotoFlota} 
               alt="Nuestra Flota y Equipo" 
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
             />
